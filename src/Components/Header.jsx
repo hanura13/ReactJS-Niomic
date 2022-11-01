@@ -7,6 +7,15 @@ class Header extends Component {
             daftar: "Daftar Makanan Nusantara",
             list: this.props.list
         };
+
+        //Menggunakan ini jika tidak memakai arrow function pada event handler
+        // this.handlePesan = this.handlePesan.bind(this)
+    }
+
+    handlePesan = (value, e) => {
+        e.preventDefault()
+        alert(this.state.daftar)
+        console.log(value)
     }
     render() {
         return (
@@ -14,6 +23,7 @@ class Header extends Component {
                 <h1>Halaman Header</h1>
                 <p>{this.state.daftar}</p>
                 <p>{this.state.list}</p>
+                <a href='/' onClick={(e) => this.handlePesan("Pesan dari Header", e)}>CLick me</a>
             </div >
         )
     }
