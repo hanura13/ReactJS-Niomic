@@ -6,7 +6,7 @@ import List from './Components/List'
 const App = () => {
   return (
     <div>
-        <Header/>
+        <Header list="3 Terbaik"/>
         Makanan Khas
         <List/>
         <Footer name="Makanan Nusantar" tahun="2022"/>
