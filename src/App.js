@@ -1,12 +1,14 @@
 import React from 'react'
 import Footer from './Components/Footer'
 import Header from './Components/Header'
+import List from './Components/List'
 
 const App = () => {
   return (
     <div>
         <Header/>
-        Render Elemen
+        Makanan Khas
+        <List/>
         <Footer/>
     </div>
   )
