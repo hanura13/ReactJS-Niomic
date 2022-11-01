@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Footer = () => {
-    var name = 'SUNDEV'
+const Footer = (props) => {
     return (
         <div>
-            <h4>Footer {name}</h4>
+            <h4>Footer {props.name}</h4>
+            <p>{props.tahun}</p>
         </div>
     )
 }

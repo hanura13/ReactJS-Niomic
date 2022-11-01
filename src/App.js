@@ -9,7 +9,7 @@ const App = () => {
         <Header/>
         Makanan Khas
         <List/>
-        <Footer/>
+        <Footer name="Makanan Nusantar" tahun="2022"/>
     </div>
   )
 }

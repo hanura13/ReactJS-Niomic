@@ -5,7 +5,7 @@ class Image extends Component {
         return (
             <div>
                 <img
-                    src='https://www.kitlv.nl/wp-content/uploads/2020/12/Rijsttafel.jpg'
+                    src={this.props.linkImage}
                     alt='gambar-makanan'
                     width="500" />
             </div>
