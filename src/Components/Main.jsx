@@ -16,12 +16,18 @@ class Main extends Component {
             }
         })
     }
+
+    handleChange = (e) => {
+        console.log(e.target.value)
+    }
     render() {
         return (
             <div>
                 <h3>{this.state.title}</h3>
                 <h2>{this.state.title2}</h2>
                 <button onClick={this.rubahData}>Rubah Data</button>
+                <br />
+                <input type="text" onChange={this.handleChange} />
             </div>
         )
     }
