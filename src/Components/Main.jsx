@@ -11,7 +11,9 @@ class Main extends Component {
 
     rubahData = () => {
         this.setState((state, props) => {
-            return { title: state.title2, title2: state.title }
+            return {
+                title: state.title2, title2: state.title
+            }
         })
     }
     render() {
